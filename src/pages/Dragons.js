@@ -1,7 +1,9 @@
-
+import Header from "../components/Header";
 function Dragons() {
     return (
-        <div></div>
+        <div>
+            <Header />
+        </div>
     );
 }
 export default Dragons;

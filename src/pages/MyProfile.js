@@ -1,6 +1,9 @@
+import Header from "../components/Header";
 function MyProfile() {
     return (
-        <div></div>
+        <div>
+            <Header />
+        </div>
     );
 }
 export default MyProfile;
