@@ -1,9 +1,10 @@
-import Header from "../components/Header";
+import Header from '../components/Header';
+
 function Missions() {
-    return (
-        <div>
-            <Header />
-        </div>
-    );
+  return (
+    <div>
+      <Header />
+    </div>
+  );
 }
 export default Missions;
