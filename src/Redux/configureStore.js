@@ -1,11 +1,6 @@
-import thunk from 'redux-thunk';
-import { combineReducers, applyMiddleware, createStore } from 'redux';
-
+import { combineReducers, configureStore } from '@reduxjs/toolkit';
 import RocketReducers from './Rockets/Rocket';
 
-const RootReducer = combineReducers({
-  RocketReducers,
-});
-
-const store = createStore(RootReducer, applyMiddleware(thunk));
+const rootReducer = combineReducers({ RocketReducers });
+const store = configureStore({ reducer: rootReducer });
 export default store;
