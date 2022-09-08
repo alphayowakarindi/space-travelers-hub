@@ -2,10 +2,10 @@
 /* eslint-disable react/prop-types */
 import { useDispatch } from 'react-redux';
 import style from './RocketStyle.module.css';
+import { ReserveData, cancelData } from '../../Redux/Rockets/Rocket';
 
 function RocketItems(props) {
   const dispatch = useDispatch();
-  dispatch;
 
   return (
     <div>
@@ -23,8 +23,8 @@ function RocketItems(props) {
                {' '}
                {item.description}
              </p>
-             {item.id < 5 ? <button className={style.reservation} type="button">Reserve Rocket</button>
-               : <button className={style.cancel} type="button">cancel reservation</button>}
+             {item.id < 5 ? <button className={style.reservation} type="button" onClick={() => { dispatch(ReserveData(item.id)); }}>Reserve Rocket</button>
+               : <button className={style.cancel} type="button" onClick={() => { dispatch(cancelData(item.id)); }}>cancel reservation</button>}
            </div>
          </div>
        ))

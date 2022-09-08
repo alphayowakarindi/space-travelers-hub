@@ -3,8 +3,8 @@ import { createAsyncThunk } from '@reduxjs/toolkit';
 const FETCH_DATA = 'space-travelers-hub/Rockets/FETCH_DATA ';
 const RocketAPI = 'https://api.spacexdata.com/v3/rockets';
 const ReserveTems = 'space-travelers-hub/Rockets/ReserveTems';
-const CancelReservartion = 'space-travelers-hub/cancelReservartion';
-const initialeState = [];
+const CancelReservation = 'space-travelers-hub/cancelReservartion';
+export const initialeState = [];
 export default function RocketReducers(state = initialeState, action = {}) {
   switch (action.type) {
     case `${FETCH_DATA}/fulfilled`:
@@ -17,7 +17,7 @@ export default function RocketReducers(state = initialeState, action = {}) {
         return item;
       });
 
-    case CancelReservartion:
+    case CancelReservation:
       // eslint-disable-next-line array-callback-return, consistent-return
       return state.map((item) => {
         if (item.id === action.id) return { ...item, id: item.id - 5 };
@@ -40,8 +40,7 @@ export const ReserveData = (id) => ({
   id,
 });
 
-export const cancrlData = (id) => ({
-  type: CancelReservartion,
+export const cancelData = (id) => ({
+  type: CancelReservation,
   id,
 });
-console.log(initialeState);
