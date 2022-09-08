@@ -31,6 +31,8 @@ function Missions() {
               <MissionsTable
                 missionName={mission.mission_name}
                 description={mission.description}
+                id={mission.mission_id}
+                reserved={mission.reserved}
                 key={mission.mission_id}
               />
             ))}

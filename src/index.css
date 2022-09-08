@@ -40,28 +40,49 @@ body {
 }
 
 /* table */
-table {
+/* table */
+.line {
+  background-color: #f2f3f3;
+  height: 1.5px;
+  margin-bottom: 15px;
+}
+.missions-table table {
   border-collapse: collapse;
-  width: 90%;
+  width: 96%;
   margin: 0 auto;
 }
 
-td,
+.missions-table td,
 th {
-  border: 1px solid #ddd;
+  border: 1px solid #dddddd;
   text-align: left;
 }
 
-th {
+.missions-table th {
   padding: 10px;
 }
 
-td {
+.missions-table td {
   padding: 32px 8px;
 }
 
 .missions-table button {
-  width: 114px;
+  width: 100px;
+  padding: 5px 0;
+  border-radius: 3px;
+}
+.missions-table .join-btn {
+  border: 1px solid #343a40;
+  color: #343a40;
+}
+
+.missions-table .leave-btn {
+  border: 1px solid #dc3847;
+  color: #dc3847;
+}
+
+.missions-table .row:nth-child(odd) {
+  background-color: #f2f2f2;
 }
 
 .missions-table span {
@@ -69,5 +90,21 @@ td {
 }
 
 .member-status {
-  width: 130px;
+  width: 140px;
+}
+
+.member-status .active {
+  background-color: #18a2b8;
+  color: #fff;
+  padding: 0 5px;
+  border-radius: 3px;
+  font-size: 12px;
+}
+
+.member-status .non-member {
+  background-color: #6d757d;
+  color: #fff;
+  padding: 0 5px;
+  border-radius: 3px;
+  font-size: 12px;
 }
