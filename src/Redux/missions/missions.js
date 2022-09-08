@@ -14,6 +14,7 @@ export const fetchMissions = createAsyncThunk(GET_MISSIONS, async () => {
       mission_name: mission.mission_name,
       description: mission.description,
     });
+    return mission;
   });
 
   return updatedMissions;
