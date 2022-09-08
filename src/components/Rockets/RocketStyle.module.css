@@ -1,52 +1,71 @@
 .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100vw;
-    padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100vw;
+  padding: 30px;
 }
 
 .contents {
-    width: 90vw;
-    display: flex;
-    align-items: flex-start;
-    gap: 50px;
-    margin-bottom: 10px;
+  width: 90vw;
+  display: flex;
+  align-items: flex-start;
+  gap: 50px;
+  margin-bottom: 10px;
 }
 
 .image {
-    width: 400px;
-    height: 400px;
+  width: 400px;
+  height: 400px;
 }
 
 .contentsDescription {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.reservation, .cancel {
-    padding: 10px;
-    width: 200px;
-    border: 1px;
-    outline: solid 1px rgb(175, 175, 171);
-    border-radius: 4px;
-    margin-top: 10px;
+.reservation,
+.cancel {
+  padding: 10px;
+  width: 200px;
+  border: 1px;
+  outline: solid 1px rgb(175, 175, 171);
+  border-radius: 4px;
+  margin-top: 10px;
 }
 
 .reservation {
-    background-color: blue;
-    color: #ffffff;
+  background-color: blue;
+  color: #fff;
 }
 
 .cancel {
-    background-color: #ffffff;
+  background-color: #fff;
 }
 
 .reserved {
-    background-color: rgb(74, 139, 199);
-    padding: 1px;
-    border-radius: 3px;
-    color: #ffffff;
-    font-size: 12px;
+  background-color: rgb(74, 139, 199);
+  padding: 1px;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 12px;
+}
+
+.profile {
+  width: 30vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+}
+
+.table {
+  border-spacing: 0;
+}
+
+.tableItem {
+  border: 1px solid rgb(114, 110, 110);
+  padding: 10px;
+  width: 30vw;
 }

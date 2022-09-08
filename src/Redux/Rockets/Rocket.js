@@ -18,7 +18,6 @@ export default function RocketReducers(state = initialeState, action = {}) {
       });
 
     case CancelReservation:
-      // eslint-disable-next-line array-callback-return, consistent-return
       return state.map((item) => {
         if (item.id === action.id) return { ...item, id: item.id - 5 };
         return item;

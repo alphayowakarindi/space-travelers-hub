@@ -14,7 +14,7 @@ function RocketItems(props) {
        props.data.map((item) => (
          <div key={item.id} id={item.id} className={style.contents}>
            <div className={style.contentImg}>
-             <img src={item.flickr_images[0]} alt="Rocket imgae" className={style.image} />
+             <img src={item.flickr_images[Math.floor((Math.random()) * 2) === 0 ? 0 : 1]} alt="Rocket imgae" className={style.image} />
            </div>
            <div className={style.contentsDescription}>
              <h2>{item.rocket_name}</h2>
