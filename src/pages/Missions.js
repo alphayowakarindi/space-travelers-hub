@@ -2,7 +2,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { useEffect } from 'react';
 import { fetchMissions } from '../Redux/missions/missions';
 import Header from '../components/Header';
-import MissionsTable from '../components/MissionsTable';
+import MissionsTable from '../components/Missions/MissionsTable';
 
 let initialRender = true;
 function Missions() {
