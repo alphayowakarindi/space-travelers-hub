@@ -111,3 +111,9 @@ th {
   border-radius: 3px;
   font-size: 12px;
 }
+
+.profile-container {
+  padding: 0 50px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
