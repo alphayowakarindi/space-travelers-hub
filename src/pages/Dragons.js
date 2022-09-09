@@ -4,12 +4,17 @@ import DragonItem from '../components/Dragons/DragonItem';
 import { fetchDragon } from '../Redux/Dragons/dragon';
 import Header from '../components/Header';
 
+let initialRender = true;
+
 const Dragons = () => {
   const dragons = useSelector((state) => state.dragons);
   const dispatch = useDispatch();
 
   useEffect(() => {
-    dispatch(fetchDragon());
+    if (initialRender) {
+      dispatch(fetchDragon());
+      initialRender = false;
+    }
   }, []);
 
   return (
