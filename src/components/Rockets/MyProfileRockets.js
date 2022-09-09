@@ -9,7 +9,7 @@ function MyProfileRockets() {
   let countRockets = 0;
   return (
     <div className={style.profile}>
-      <h2>My rockets</h2>
+      <h2>My Rockets</h2>
       <table className={style.table}>
         <tbody className={style.tbody}>
           {RocketReserved.map((item) => {
@@ -25,7 +25,7 @@ function MyProfileRockets() {
           })}
           {countRockets === 0 ? (
             <tr>
-              <td>Not Rocket Reserved</td>
+              <td>No Rocket Reserved</td>
             </tr>
           )
             : null }
