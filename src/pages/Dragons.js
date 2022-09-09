@@ -1,10 +1,18 @@
-import Header from '../components/Header';
+import { useEffect } from 'react';
+import { useDispatch } from 'react-redux';
+import DragonItem from '../components/Dragons/DragonItem';
+import { fetchDragon } from '../Redux/Dragons/dragon';
 
-function Dragons() {
+const Dragons = () => {
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(fetchDragon());
+  }, []);
   return (
     <div>
-      <Header />
+      <DragonItem />
     </div>
   );
-}
+};
+
 export default Dragons;
