@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import planeticon from '../images/planet.png';
 
 const Header = () => (
@@ -8,10 +8,10 @@ const Header = () => (
       <p>Space Travelers Hub</p>
     </div>
     <div className="links">
-      <Link to="/">Rockets</Link>
-      <Link to="/Missions">Missions</Link>
-      <Link to="/Dragons">Dragons</Link>
-      <Link to="/MyProfile">My profile</Link>
+      <NavLink to="/">Rockets</NavLink>
+      <NavLink to="/Missions">Missions</NavLink>
+      <NavLink to="/Dragons">Dragons</NavLink>
+      <NavLink to="/MyProfile">My profile</NavLink>
     </div>
   </nav>
 );
