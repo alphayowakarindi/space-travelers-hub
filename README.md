@@ -31,6 +31,10 @@ To get a local copy up and running follow these simple example steps.
 1. For CSS run `npx stylelint "**/*.{css,scss}"`
 2. For Javascript run `npx eslint .`
 
+## Live Demo
+
+[Live Demo Link](https://space-travelers-hub-company.netlify.app/)
+
 ## Authors
 
 👤 **Alphayo Wakarindi**
