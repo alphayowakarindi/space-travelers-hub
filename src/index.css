@@ -117,3 +117,16 @@ th {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
+
+/* Global app style for Navlinks */
+
+.links a {
+  text-decoration: none;
+  color: #3879db;
+}
+
+.links a.active {
+  color: #3879db;
+  font-weight: bold;
+  text-decoration: underline;
+}
