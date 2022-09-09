@@ -1,6 +1,7 @@
 import Header from '../components/Header';
 import MyProfileRockets from '../components/Rockets/MyProfileRockets';
 import DragonsProfile from '../components/Dragons/DragonsProfile';
+import MissionsProfile from '../components/Missions/MissionsProfile';
 
 function MyProfile() {
   return (
@@ -8,8 +9,11 @@ function MyProfile() {
       <Header />
       <div className="profile-container">
         {' '}
-        <MyProfileRockets />
-        <DragonsProfile />
+        <div className="profile-container">
+          <MyProfileRockets />
+          <MissionsProfile />
+          <DragonsProfile />
+        </div>
       </div>
     </div>
   );
