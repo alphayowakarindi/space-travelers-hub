@@ -1,0 +1,29 @@
+.image-dragon {
+  width: 17.125rem;
+  height: 15.25rem;
+}
+
+.item-container {
+  list-style: none;
+  display: flex;
+  margin-top: 1.875rem;
+  gap: 1.25rem;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.resrvation {
+  background-color: blue;
+  color: #fff;
+  border-radius: 4px;
+  padding: 5px;
+}
+
+.reserved {
+  background-color: rgb(74, 139, 199);
+  padding: 3px;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 12px;
+}
